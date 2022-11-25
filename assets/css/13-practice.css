@@ -1,0 +1,14 @@
+.chk-mode {
+  display: none;
+}
+
+.chk-mode:checked + .content {
+  background-color: black;
+  color: white;
+}
+.lbl-mode {
+  background-color: aquamarine;
+  padding: 0.5em 1rem 0.5em 0.5em;
+  display: inline-block;
+  cursor: pointer;
+}
