@@ -1,0 +1,123 @@
+:root {
+  --color1: rgb(79, 6, 129);
+  --color2: rgb(219, 223, 223);
+}
+html {
+  background-color: var(--color1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-page {
+  margin: 1rem 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color2);
+}
+
+.home-page .sign-in-menu {
+  background-color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 250px;
+  min-height: 50vh;
+}
+
+.home-page .sign-in-menu .back {
+  color: var(--color1);
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 0 1 150px;
+}
+.sign-in-menu .back i {
+  margin-right: 0.5rem;
+}
+
+.home-page .sign-in-menu .sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.sign-in .sign-in-text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  margin-top: 2rem;
+  border: none;
+  border-bottom: 1px solid var(--color1);
+  opacity: 0.5;
+  width: 100%;
+  background-color: var(--color2);
+  position: relative;
+  left: 0.5rem;
+}
+.sign-in input:focus {
+  outline: none;
+}
+
+.sign-in .btn {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0.8rem 3rem;
+  background-color: var(--color1);
+  color: var(--color2);
+  font-weight: 800;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.home-page .-img {
+  background-image: url("../img/bg-login.jpg");
+  background-size: cover;
+  color: var(--color2);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  flex: 2 1 300px;
+  display: flex;
+  flex-wrap: wrap;
+  /*   justify-content: center;
+  align-items: center;
+  text-align: center; */
+}
+.-img .baslik {
+  width: 100%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.-img .text {
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* 
+Nesne yerleşimleri için flexbox kullanınız
+
+Renk tanımlamalarını değişken kullanarak yapınız
+
+Arkaplan görüntüsü img klasöründe bulunmaktadır
+
+LONYX ve altındaki açıklama arkaplan görüntünün üzerinde 
+merkeze gelecek şekilde ayarlanacaktır.
+
+Ekran responsive olarak tasarlanacaktır. Eğer küçük ekranlarda 
+bakılacaksa signin formu üstte kalacak, sağ taraftaki LONYX 
+bölümü aşağı kaydırılacaktır.
+*/
